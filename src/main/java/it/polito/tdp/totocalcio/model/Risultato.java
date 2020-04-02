@@ -19,9 +19,13 @@ public class Risultato {
 			risultati.add(RisultatoPartita.valueOf(colonna.charAt(i)));
 		}
 	}
-	
+
+	public Risultato(List<RisultatoPartita> lista) {
+		risultati.addAll(lista);
+	}
+
 	public String toString() {
-		return this.risultati.toString() ;
+		return this.risultati.toString();
 	}
 
 }
